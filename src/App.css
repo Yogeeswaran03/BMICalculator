@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #363738;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    width: 350px;
+    padding: 40px;
+    background-color: #130f0f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.data img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    color: #ffbc00;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-form{
+    margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-form label{
+    display: block;
+    color: #d7d6d6;
+    margin-bottom: 5px;
+}
+
+.input-form input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #888;
+    border-radius: 10px;
+    background-color: #1e1d1d;
+    color: white;
+    font-size: 16px;
+}
+
+.button, .button1{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffbc00;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover, .button1:hover{
+    background-color: #e5a800;
+}
+
+.result{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #e5a800;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p a{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #d7d6d6;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: #ffbc00;
+}
+
+@media (max-width: 600px) {
+    .App {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .result {
+        font-size: 16px;
+
+    }
 }
